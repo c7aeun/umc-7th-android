@@ -39,25 +39,28 @@ UMC (University Makesus Challenge) 이화여대 7기 안드로이드 워크북 �
 <br/>
 
 ## 💌 PR(Pull Request) 생성(과제 제출) 방법
-### 1️⃣ 로컬 터미널에서 `git pull origin main` 명령어로 원격 저장소와 로컬 저장소 버전 맞추기
+### 1️⃣ 로컬 터미널에서 `git pull origin main` 명령어로 원격 저장소와 로컬 저장소 버전 맞춰주세요.
 <img width="1440" alt="스크린샷 2024-10-02 오전 1 32 33" src="https://github.com/user-attachments/assets/6041b4b4-0e85-4e02-b9e7-cadefee884db">
 
-### 2️⃣ 로컬 터미널에서 `git add .` 명령어로 작업 사항 스테이징 영역에 올리기
+### 2️⃣ 로컬 터미널에서 `git add .` 명령어로 작업 사항 스테이징 영역에 올려주세요.
 <img width="1440" alt="스크린샷 2024-10-02 오전 1 34 04" src="https://github.com/user-attachments/assets/820e7c36-735e-4c35-bb73-750ad86495ec">
 
-### 3️⃣ 로컬 터미널에서 `git commit -m "[weekN] 미션 수행 내용"` 명령어로 스테이징 영역에 있는 작업 사항 커밋하기
+### 3️⃣ 로컬 터미널에서 `git commit -m "[weekN] 미션 수행 내용"` 명령어로 스테이징 영역에 있는 작업 사항 커밋해주세요.
 - 커밋 메시지 컨벤션 : `[week1] 미션 수행 내용`
 <img width="1440" alt="스크린샷 2024-10-02 오전 1 34 53" src="https://github.com/user-attachments/assets/294c057f-63b1-420d-8966-7328caf38bb1">
 
-### 4️⃣ 로컬 터미널에서 `git push origin 브랜치명` 명령어로 원격 저장소 해당 주차 브랜치에 푸시하기
+### 4️⃣ 로컬 터미널에서 `git push origin 브랜치명` 명령어로 원격 저장소 해당 주차 브랜치에 푸시해주세요.
 <img width="1440" alt="스크린샷 2024-10-02 오전 1 36 50" src="https://github.com/user-attachments/assets/ede071cd-f106-4471-af69-6a875bf328ae">
 
-### 5️⃣ 깃허브 개인 레포지토리에 접속하여 umc-7th-android 레포지토리로 **Pull Request** 보내기
+### 5️⃣ 깃허브 개인 레포지토리에 접속하여 umc-7th-android 레포지토리로 **Pull Request** 보내주세요.
 <img width="1245" alt="스크린샷 2024-10-02 오전 1 37 33" src="https://github.com/user-attachments/assets/0498ca4d-cc02-4c4f-bd20-0b08085a417d">
 <br/>
 <img width="1254" alt="스크린샷 2024-10-02 오전 1 46 29" src="https://github.com/user-attachments/assets/deec0d66-a9b1-4c6b-b357-e2f5c8611e2d">
 
-### 6️⃣ 수정 사항이 있을 경우 개인 레포지토리와 연결된 로컬 환경에서 작업 후 1️⃣번 ~ 4️⃣번 과정 반복 (열린 PR이 닫히기 전까지는 해당 브랜치에서 수정된 사항이 자동을 PR에 반영됨)
+### 6️⃣ 수정 사항이 있을 경우 개인 레포지토리와 연결된 로컬 환경에서 작업 후 1️⃣번 ~ 4️⃣번 과정 반복하시면 됩니다! (열린 PR이 닫히기 전까지는 해당 브랜치에서 수정된 사항이 자동을 PR에 반영됨)
+
+### 7️⃣ 파트장의 코드리뷰가 완료된 후 UMC 조직 레포지토리의 본인 닉네임 브랜치에 PR이 머지되면 포크한 개인 레포지토리에서도 미션 수행한 주차의 브랜치를 main 브랜치로 합쳐주세요.
+- 특정 브랜치를 main 브랜치로 합치는 방법은 **PR을 날려서 합치거나** 로컬 터미널에서 **`git pull origin weekN`**(원격 저장소의 주차 브랜치 내용 업데이트) -> **`git checkout main`**(메인 브랜치로 분기 이동) -> **`git merge weekN`**(주차 브랜치 메인에 합치기) -> **`git push origin main`**(원격 저장소의 메인 브랜치에 합친 사항 반영)의 절차를 거쳐주시면 됩니다!
 <br/>
 
 ## 🥺 파트장 당부의 말...
