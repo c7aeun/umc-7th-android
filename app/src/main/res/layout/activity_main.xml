@@ -28,7 +28,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="125dp"
+            android:layout_marginTop="80dp"
             android:fontFamily="@font/myfont"
             android:text="오늘 하루는 어땠나요?"
             android:textSize="30sp"
@@ -169,45 +169,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView2"
-            android:name="com.example.umc_week1.EmotionFragment"
-            android:layout_width="40dp"
-            android:layout_height="45dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            tools:layout_editor_absoluteY="249dp" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_navigation_menu" />
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView3"
-            android:name="com.example.umc_week1.EmotionFragment"
-            android:layout_width="40dp"
-            android:layout_height="45dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            tools:layout_editor_absoluteY="339dp" />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView4"
-            android:name="com.example.umc_week1.EmotionFragment"
-            android:layout_width="40dp"
-            android:layout_height="45dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView5"
-            tools:layout_editor_absoluteY="520dp" />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView6"
-            android:name="com.example.umc_week1.EmotionFragment"
-            android:layout_width="40dp"
-            android:layout_height="45dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView6"
-            tools:layout_editor_absoluteY="611dp" />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView5"
-            android:name="com.example.umc_week1.EmotionFragment"
-            android:layout_width="40dp"
-            android:layout_height="45dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView4"
-            tools:layout_editor_absoluteY="429dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
