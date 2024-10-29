@@ -1,47 +1,76 @@
 package com.example.umc_week4
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.umc_week4.ui.theme.UMC_Week4Theme
+import androidx.appcompat.app.AppCompatActivity
+import kotlin.concurrent.thread
+import android.widget.TextView
+import android.widget.Button
+import android.os.Handler
+import android.os.Looper
+import android.os.Message
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+
+
+    var started = false
+    private lateinit var textTimer: TextView
+    private lateinit var buttonStart: Button
+    private lateinit var buttonStop: Button
+    private lateinit var buttonEnd: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            UMC_Week4Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+        setContentView(R.layout.activity_main)
+
+        buttonStart.setOnClickListener { start() }
+        buttonStop.setOnClickListener { stop() }
+        buttonEnd.setOnClickListener { end() }
+    }
+
+    val SETTIME = 51
+    val RESET = 52
+
+    val handler = object : Handler(Looper.getMainLooper()) {
+        override fun handleMessage(msg: Message) {
+            when (msg.what) {
+                SETTIME -> {
+                    textTimer.text = formatTime(msg.arg1)
+                }
+                RESET -> {
+                    textTimer.text = "00 : 00"
                 }
             }
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    fun start() {
+        started = true
+        thread(start=true) {
+            var total = 0
+            while (true) {
+                Thread.sleep(1000)
+                if(!started) break
+                total += 1
+                val msg = Message()
+                msg.what = SETTIME
+                msg.arg1 = total
+                handler.sendMessage(msg)
+            }
+        }
+    }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    UMC_Week4Theme {
-        Greeting("Android")
+    fun stop() {
+        started = false
+    }
+
+    fun end() {
+        started = false
+        textTimer.text = "00 : 00"
+    }
+
+    fun formatTime(time:Int) : String {
+        val minute = String.format("%02d", time/60)
+        val second = String.format("%02d", time%60)
+        return "$minute : $second"
     }
 }

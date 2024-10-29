@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UMC_Week4</string>
+    <string name="time_text">00 : 00</string>
 </resources>
