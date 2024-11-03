@@ -3,28 +3,26 @@ package com.example.umc_week4
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.concurrent.thread
-import android.widget.TextView
-import android.widget.Button
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
+import com.example.umc_week4.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
 
     var started = false
-    private lateinit var textTimer: TextView
-    private lateinit var buttonStart: Button
-    private lateinit var buttonStop: Button
-    private lateinit var buttonEnd: Button
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        buttonStart.setOnClickListener { start() }
-        buttonStop.setOnClickListener { stop() }
-        buttonEnd.setOnClickListener { end() }
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.buttonStart.setOnClickListener { start() }
+        binding.buttonStop.setOnClickListener { stop() }
+        binding.buttonEnd.setOnClickListener { end() }
     }
 
     val SETTIME = 51
@@ -34,10 +32,11 @@ class MainActivity : AppCompatActivity() {
         override fun handleMessage(msg: Message) {
             when (msg.what) {
                 SETTIME -> {
-                    textTimer.text = formatTime(msg.arg1)
+                    binding.textTimer.text = formatTime(msg.arg1)
                 }
+
                 RESET -> {
-                    textTimer.text = "00 : 00"
+                    binding.textTimer.text = "00 : 00"
                 }
             }
         }
@@ -45,11 +44,11 @@ class MainActivity : AppCompatActivity() {
 
     fun start() {
         started = true
-        thread(start=true) {
+        thread(start = true) {
             var total = 0
             while (true) {
                 Thread.sleep(1000)
-                if(!started) break
+                if (!started) break
                 total += 1
                 val msg = Message()
                 msg.what = SETTIME
@@ -65,12 +64,12 @@ class MainActivity : AppCompatActivity() {
 
     fun end() {
         started = false
-        textTimer.text = "00 : 00"
+        binding.textTimer.text = "00 : 00"
     }
 
-    fun formatTime(time:Int) : String {
-        val minute = String.format("%02d", time/60)
-        val second = String.format("%02d", time%60)
+    fun formatTime(time: Int): String {
+        val minute = String.format("%02d", time / 60)
+        val second = String.format("%02d", time % 60)
         return "$minute : $second"
     }
 }
