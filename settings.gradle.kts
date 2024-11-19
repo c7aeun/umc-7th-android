@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UMC_Week5"
+rootProject.name = "FLO-clone"
 include(":app")
- 

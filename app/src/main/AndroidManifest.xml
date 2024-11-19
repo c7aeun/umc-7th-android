@@ -10,22 +10,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.UMC_Week5"
+        android:theme="@style/Theme.FLOclone"
         tools:targetApi="31">
-        <activity
-            android:name=".ui.theme.ConfirmActivity"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.UMC_Week5">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".SongActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

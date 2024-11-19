@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/saved_no_music_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saved_no_music_tv"
+        android:textColor="@color/gray_color"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/saved_list_cl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/saved_btn_select_all_iv"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:contentDescription="@string/saved_btn_select_all_tv"
+            android:src="@drawable/ic_check"
+            app:layout_constraintBottom_toBottomOf="@+id/saved_btn_select_all_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/saved_btn_select_all_tv" />
+
+        <TextView
+            android:id="@+id/saved_btn_select_all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:paddingVertical="10dp"
+            android:text="@string/saved_btn_select_all_tv"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/saved_btn_select_all_iv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/saved_btn_play_iv"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/saved_btn_select_play_tv"
+            android:src="@drawable/ic_play_outline"
+            app:layout_constraintBottom_toBottomOf="@+id/saved_btn_select_all_tv"
+            app:layout_constraintStart_toEndOf="@id/saved_btn_select_all_tv"
+            app:layout_constraintTop_toTopOf="@+id/saved_btn_select_all_tv" />
+
+        <TextView
+            android:id="@+id/saved_btn_play_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/saved_btn_select_play_tv"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/saved_btn_select_all_tv"
+            app:layout_constraintStart_toEndOf="@+id/saved_btn_play_iv"
+            app:layout_constraintTop_toTopOf="@+id/saved_btn_select_all_tv" />
+
+        <TextView
+            android:id="@+id/saved_btn_edit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/saved_btn_edit_tv"
+            app:layout_constraintBottom_toBottomOf="@+id/saved_btn_select_all_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/saved_btn_select_all_tv" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/saved_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saved_btn_select_all_tv"
+            tools:listitem="@layout/item_song" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
