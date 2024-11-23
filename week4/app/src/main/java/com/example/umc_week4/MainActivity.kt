@@ -10,8 +10,7 @@ import com.example.umc_week4.databinding.ActivityMainBinding
 import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
-
-
+    private var total = 0
     var started = false
     private lateinit var binding: ActivityMainBinding
 
@@ -46,7 +45,6 @@ class MainActivity : AppCompatActivity() {
     fun start() {
         started = true
         thread(start = true) {
-            var total = 0
             while (true) {
                 Thread.sleep(1000)
                 if (!started) break
@@ -65,6 +63,7 @@ class MainActivity : AppCompatActivity() {
 
     fun end() {
         started = false
+        total = 0
         binding.textTimer.text = formatTime(0)
     }
 
