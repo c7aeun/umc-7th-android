@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_writing"
+        android:icon="@drawable/writing_icon"
+        android:title="Writing" />
+
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@drawable/calendar_icon"
+        android:title="Calendar" />
+
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/user_icon"
+        android:title="User" />
+</menu>

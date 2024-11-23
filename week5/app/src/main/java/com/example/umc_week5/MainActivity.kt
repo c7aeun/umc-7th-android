@@ -6,24 +6,24 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.umc_week5.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     // 전역 변수로 메모 내용을 저장하는 변수 선언
     private var memoContent: String? = null
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        // EditText와 Button 연결
-        val editTextMemo = findViewById<EditText>(R.id.editTextMemo)
-        val buttonConfirm = findViewById<Button>(R.id.buttonConfirm)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // 버튼을 클릭하면 ConfirmActivity로 이동
-        buttonConfirm.setOnClickListener {
+        binding.buttonConfirm.setOnClickListener {
             val intent = Intent(this, ConfirmActivity::class.java)
-            intent.putExtra("MEMO_CONTENT", editTextMemo.text.toString())
+            val text = binding.editTextMemo.text.toString()
+            intent.putExtra("MEMO_CONTENT", text)
             startActivity(intent)
         }
     }
@@ -32,9 +32,8 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
 
         // memoContent가 null이 아닌 경우, EditText에 설정
-        val editTextMemo = findViewById<EditText>(R.id.editTextMemo)
         if (!memoContent.isNullOrEmpty()) {
-            editTextMemo.setText(memoContent)
+            binding.editTextMemo.setText(memoContent)
         }
     }
 
@@ -42,8 +41,7 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
 
         // 현재 EditText에 작성된 내용을 memoContent에 저장
-        val editTextMemo = findViewById<EditText>(R.id.editTextMemo)
-        memoContent = editTextMemo.text.toString()
+        memoContent = binding.editTextMemo.text.toString()
     }
 
     override fun onRestart() {
@@ -59,6 +57,7 @@ class MainActivity : AppCompatActivity() {
             setNegativeButton("아니오") { _, _ ->
                 // memoContent 내용을 비워 초기화
                 memoContent = ""
+                binding.editTextMemo.text = null
             }
             show()
         }

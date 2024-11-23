@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "com.example.umc_week1.app-debug-35:/layout_activity_main.xml.flat",
+        "source": "com.example.umc_week1.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_emotion_soso.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/emotion_soso.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/layout_fragment_calendar.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/fragment_calendar.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/font_myfont.ttf.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/font/myfont.ttf"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_user_icon.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/user_icon.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_emotion_smile.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/emotion_smile.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_emotion_sad.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/emotion_sad.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_emotion_happy.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/emotion_happy.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_calendar_icon.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/calendar_icon.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/layout_fragment_emotion.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/fragment_emotion.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_background.png.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/background.png"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/layout_fragment_writing.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/fragment_writing.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_writing_icon.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/writing_icon.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/font_amatica_sc_bold.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/font/amatica_sc_bold.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_emotion_mad.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/emotion_mad.xml"
+    },
+    {
+        "merged": "com.example.umc_week1.app-debug-35:/layout_activity_second.xml.flat",
+        "source": "com.example.umc_week1.app-main-37:/layout/activity_second.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/layout_activity_main.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_background_.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/background_.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/font_annie_use_your_telescope.ttf.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/font/annie_use_your_telescope.ttf"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/xml_backup_rules.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/layout_fragment_home.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/menu_bottom_navigation_menu.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/menu/bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_home_icon.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/home_icon.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/layout_fragment_user.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/fragment_user.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-debug-35:/drawable_vector.xml.flat",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/drawable/vector.xml"
+    },
+    {
+        "merged": "com.example.umc_week1.app-debug-35:/layout_fragment_home.xml.flat",
+        "source": "com.example.umc_week1.app-main-37:/layout/fragment_home.xml"
+    }
+]
