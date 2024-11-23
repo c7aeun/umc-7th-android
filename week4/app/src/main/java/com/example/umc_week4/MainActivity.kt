@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import android.os.Message
 import com.example.umc_week4.databinding.ActivityMainBinding
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 RESET -> {
-                    binding.textTimer.text = "00 : 00"
+                    binding.textTimer.text = formatTime(0)
                 }
             }
         }
@@ -64,12 +65,12 @@ class MainActivity : AppCompatActivity() {
 
     fun end() {
         started = false
-        binding.textTimer.text = "00 : 00"
+        binding.textTimer.text = formatTime(0)
     }
 
     fun formatTime(time: Int): String {
-        val minute = String.format("%02d", time / 60)
-        val second = String.format("%02d", time % 60)
+        val minute = String.format(Locale.KOREA, "%02d", time / 60)
+        val second = String.format(Locale.KOREA, "%02d", time % 60)
         return "$minute : $second"
     }
 }
