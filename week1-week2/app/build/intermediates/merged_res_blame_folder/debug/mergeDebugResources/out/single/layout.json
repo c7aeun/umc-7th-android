@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-mergeDebugResources-34:/layout/fragment_emotion.xml",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/fragment_emotion.xml"
+    },
+    {
+        "merged": "com.example.umc_week1.app-mergeDebugResources-34:/layout/activity_main.xml",
+        "source": "com.example.umc_week1.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-mergeDebugResources-34:/layout/fragment_home.xml",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-mergeDebugResources-34:/layout/activity_main.xml",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.umc_week1.app-mergeDebugResources-34:/layout/activity_second.xml",
+        "source": "com.example.umc_week1.app-main-37:/layout/activity_second.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-mergeDebugResources-34:/layout/fragment_calendar.xml",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/fragment_calendar.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-mergeDebugResources-34:/layout/fragment_user.xml",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/fragment_user.xml"
+    },
+    {
+        "merged": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-mergeDebugResources-34:/layout/fragment_writing.xml",
+        "source": "/Users/ossu-dev/.gradle/daemon/8.7/com.example.umc_week1.app-main-37:/layout/fragment_writing.xml"
+    },
+    {
+        "merged": "com.example.umc_week1.app-mergeDebugResources-34:/layout/fragment_home.xml",
+        "source": "com.example.umc_week1.app-main-37:/layout/fragment_home.xml"
+    }
+]
