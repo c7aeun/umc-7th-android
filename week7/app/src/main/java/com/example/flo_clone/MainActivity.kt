@@ -53,13 +53,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-//        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE)
-//        val songJson = sharedPreferences.getString("songData", null)
-//        song = if (songJson != null) {
-//            gson.fromJson(songJson, Song::class.java)
-//        } else {
-//            Song("아이유 (IU)", "LILAC", 0, 60, false, "music_lilac")
-//        }
         val spf = getSharedPreferences("song", MODE_PRIVATE)
         val songId = spf.getInt("sondId", 0)
 

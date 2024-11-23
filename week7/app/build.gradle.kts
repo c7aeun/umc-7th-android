@@ -5,16 +5,8 @@ plugins {
 }
 
 android {
-<<<<<<<< HEAD:week7/app/build.gradle.kts
     namespace = "com.example.flo_clone"
     compileSdk = 34
-========
-    viewBinding {
-        enable = true
-    }
-    namespace = "com.example.umc_week5"
-    compileSdk = 35
->>>>>>>> main:week5/app/build.gradle.kts
 
     defaultConfig {
         applicationId = "com.example.flo_clone"
@@ -43,28 +35,14 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        dataBinding = true
         viewBinding = true
-<<<<<<<< HEAD:week7/app/build.gradle.kts
-========
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
-    }
-    packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
->>>>>>>> main:week5/app/build.gradle.kts
     }
 }
 
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-<<<<<<<< HEAD:week7/app/build.gradle.kts
-========
-    implementation(libs.androidx.lifecycle.runtime.ktx)
->>>>>>>> main:week5/app/build.gradle.kts
     implementation(libs.material)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.lifecycle.livedata.ktx)
@@ -75,12 +53,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-<<<<<<<< HEAD:week7/app/build.gradle.kts
 
     // RoomDB
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
-========
->>>>>>>> main:week5/app/build.gradle.kts
 }

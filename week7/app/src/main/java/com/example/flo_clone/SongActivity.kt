@@ -33,9 +33,6 @@ class SongActivity : AppCompatActivity() {
         initSong()
 
         binding.songDownIb.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("title", binding.songMusicTitleTv.text.toString())
-            setResult(RESULT_OK, intent)
             finish()
         }
 
@@ -107,6 +104,7 @@ class SongActivity : AppCompatActivity() {
         startTimer()
         setPlayer(songs[nowPos])
     }
+
     private fun setLike(isLike: Boolean) {
         songs[nowPos].isLike = !isLike
         songDB.songDao().updateIsLikeById(!isLike, songs[nowPos].id)

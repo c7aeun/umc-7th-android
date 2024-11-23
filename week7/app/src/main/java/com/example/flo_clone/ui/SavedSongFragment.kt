@@ -1,18 +1,18 @@
 package com.example.flo_clone.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.flo_clone.R
-import com.example.flo_clone.databinding.FragmentSavedSongBinding
+import com.example.flo_clone.databinding.FragmentSavedBinding
 import com.example.flo_clone.model.SongDatabase
+import com.example.flo_clone.databinding.FragmentSavedSongBinding
 import com.example.flo_clone.ui.locker.SavedRecyclerAdapter
 
-class SavedSongFragment  : Fragment() {
-    lateinit var binding: FragmentSavedSongBinding
+class SavedSongFragment : Fragment() {
+    lateinit var binding: FragmentSavedBinding
     lateinit var songDB: SongDatabase
 
     override fun onCreateView(
@@ -20,7 +20,7 @@ class SavedSongFragment  : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSavedSongBinding.inflate(inflater, container, false)
+        binding = FragmentSavedBinding.inflate(inflater, container, false)
 
         songDB = SongDatabase.getInstance(requireContext())!!
 
@@ -33,9 +33,10 @@ class SavedSongFragment  : Fragment() {
     }
 
     private fun initRecyclerview() {
-        binding.lockerSavedSongRecyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        binding.savedRv.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
 
-        val songRVAdapter = SavedSongRVAdapter()
+        val songRVAdapter = SavedRecyclerAdapter()
 
         binding.lockerSavedSongRecyclerView.adapter = songRVAdapter
 
